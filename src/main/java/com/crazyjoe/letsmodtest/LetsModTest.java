@@ -1,5 +1,6 @@
 package com.crazyjoe.letsmodtest;
 
+import com.crazyjoe.letsmodtest.configuration.ConfigurationHandler;
 import com.crazyjoe.letsmodtest.proxy.IProxy;
 import com.crazyjoe.letsmodtest.reference.Reference;
 import cpw.mods.fml.common.Mod;
@@ -20,7 +21,7 @@ public class LetsModTest {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-
+        ConfigurationHandler.init(event.getSuggestedConfigurationFile());
     }
 
     @Mod.EventHandler
