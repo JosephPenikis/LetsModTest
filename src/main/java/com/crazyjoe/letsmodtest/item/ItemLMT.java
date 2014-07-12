@@ -1,5 +1,6 @@
 package com.crazyjoe.letsmodtest.item;
 
+import com.crazyjoe.letsmodtest.creativetab.CreativeTabLMT;
 import com.crazyjoe.letsmodtest.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -12,6 +13,7 @@ public class ItemLMT extends Item
     public ItemLMT()
     {
         super();
+        this.setCreativeTab(CreativeTabLMT.LMT_TAB);
     }
 
     @Override

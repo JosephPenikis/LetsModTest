@@ -1,10 +1,11 @@
 package com.crazyjoe.letsmodtest.block;
 
+import com.crazyjoe.letsmodtest.creativetab.CreativeTabLMT;
+import com.crazyjoe.letsmodtest.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import com.crazyjoe.letsmodtest.reference.Reference;
 import net.minecraft.client.renderer.texture.IIconRegister;
 
 public class BlockLMT extends Block
@@ -17,6 +18,7 @@ public class BlockLMT extends Block
     public BlockLMT()
     {
         this(Material.rock);
+        this.setCreativeTab(CreativeTabLMT.LMT_TAB);
     }
 
     @Override

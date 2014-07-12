@@ -22,8 +22,7 @@ group= "com.crazyjoe.letsmodtest" // http://maven.apache.org/guides/mini/guide-n
 archivesBaseName = "letsmodtest"
 
 minecraft {
-    version = "1.7.10-10.13.0.1170"
-    assetDir = "eclipse/assets"
+    version = "1.7.10-10.13.0.1180"
 }
 
 dependencies {
